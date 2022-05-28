@@ -1,0 +1,172 @@
+/* Marta Cuccurullo */
+
+
+body {
+  font-family:  "Montserrat", gadget, sans-serif;
+}
+
+/*bar background*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* to highlight the page you are on at the moment */
+.active {
+  background-color: #ddd;
+}
+
+/* to hide the hypothetical hamburger menu that appear when the window is too narrow */
+.topnav .icon {
+  display: none;
+}
+
+.tendina1 {
+  float: left;
+  overflow: hidden;
+}
+
+.tendina1 .bottone {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*to hide the list*/
+.elenco {
+  display: none;
+  position: absolute;
+  background: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px;
+  z-index: 1;
+}
+
+/* list style */
+.elenco a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* background when the mouse is over */
+.topnav a:hover, .tendina1:hover .bottone {
+  background-color: #555;
+  color: white;
+}
+
+/* background when the mouse is over the links in the curtains menu */
+.elenco a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* opens down the curtains when the mouse is over */
+.tendina1:hover .elenco {
+  display: block;
+}
+
+/* to give a dimensional standard to permit the right visualization of the website, when the window is too small this happens:*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .tendina1 .bottone {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/** the responsive class is introduced by the json function when you click on the hamburger menu **/
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .tendina1 {float: none;}
+  .topnav.responsive .elenco {position: relative;}
+  .topnav.responsive .tendina1 .bottone {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .bottoncino {
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+}
+
+/** switch style **/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 50px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	background: #fff;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+/* little button background color when it is active */
+input:checked + label {
+	background-color: rgb(227, 139, 232);
+}
+/* mouvement of the label when the checkbox is checked */
+input:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 32.5px;
+}
+
+/* switch button */
+.bottoncino {
+	display: inline-flex;
+	justify-content: right;
+	align-items: right;
+}

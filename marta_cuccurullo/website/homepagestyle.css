@@ -1,0 +1,64 @@
+/* Marta Cuccurullo */
+
+body {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-out;
+}
+/** here you can modify the class applied to the body with the theme switch **/
+body.dark-theme {
+	background: #333;
+  color: white;
+}
+
+
+.nometopic {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  color: white;
+}
+
+img {
+  align: center;
+  width: 250px;
+  height: 150px;
+  float: left;
+}
+
+.contenitore {
+  position:relative;
+  width: 250px;
+  height: 150px;
+  float: left;
+  margin-left: 7%;
+}
+/** the overlay has a light animation in order to make it smoother and prettier **/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(227, 139, 232);
+  float: left;
+}
+
+/** to activate the overlay with the mouse over**/
+.contenitore:hover .overlay {
+  opacity: 1;
+}
+
+.topic {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+h2 {
+  align: center;
+}

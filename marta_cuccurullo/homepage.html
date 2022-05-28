@@ -1,0 +1,71 @@
+<!-- Marta Cuccurullo -->
+
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for the responsive website  -->
+    <link rel="stylesheet" href="./website/menustyle.css">
+    <link rel="stylesheet" href="./website/homepagestyle.css">
+
+    <title> HI! I'M MARTA </title>
+
+  </head>
+
+  <body>
+
+    <h1>HI! I'M MARTA, NICE TO MEET YOU :) </h1>
+    <h2> Here you can find something to get to know me better... </h2>
+
+    <!-- menu divided into three sections -->
+    <div class="topnav" id="topnavid">
+      <a href="homepage.html">Home</a>
+      <div class="tendina1">
+        <button class="bottone">Topic</button>
+        <div class="elenco">
+          <a href="./website/colors.html">Colors</a>
+          <a href="./website/people.html">People</a>
+          <a href="./website/cars.html">Cars</a>
+        </div>
+      </div>
+      <div class="tendina1">
+        <button class="bottone">I like</button>
+        <div class="elenco">
+          <a href="./website/like-colors.html">Colors</a>
+          <a href="./website/like-people.html">People</a>
+          <a href="./website/like-cars.html">Cars</a>
+        </div>
+      </div>
+      <div class="tendina1">
+        <button class="bottone">I dislike</button>
+        <div class="elenco">
+          <a href="./website/dislike-colors.html">Colors</a>
+          <a href="./website/dislike-people.html">People</a>
+          <a href="./website/dislike-cars.html">Cars</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!-- this is needed to make sure that the hamburger menu does not disappear when the window is too narrow -->
+      <span class="bottoncino"><input type="checkbox" id="switch" /><label for="switch">Toggle</label></span>
+    </div>
+
+<!-- link to other pages with the overlay -->
+    <div class="topic">
+      <div class="contenitore">  <a href="./website/cars.html">
+         <img src="./assets/cars_homepage.jpeg">
+         <div class="overlay"> <div class="nometopic">Cars</div></div>
+       </a> </div>
+      <div class="contenitore">
+      <a href="./website/people.html"><img src="./assets/people_homepage.jpg">
+      <div class="overlay"><div class="nometopic">People</div></div>
+      </a></div>
+      <div class="contenitore">
+      <a href="./website/colors.html"><img src="./assets/colors_background.jpg">
+        <div class="overlay"><div class="nometopic">Colors</div></div>
+      </a></div>
+    </div>
+
+    <script src="./website/functions.js"></script>
+
+  </body>
+
+
+</html>

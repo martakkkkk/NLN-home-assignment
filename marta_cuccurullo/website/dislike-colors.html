@@ -1,0 +1,60 @@
+<!-- Marta Cuccurullo -->
+
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./menustyle.css">
+    <link rel="stylesheet" href="./colors.css">
+
+    <title>dislike-colors</title>
+  </head>
+
+<body>
+
+  <h1>HI! THAT'S MARTA :)</h1>
+
+  <!-- menu divided into three sections -->
+  <div class="topnav" id="topnavid">
+    <a href="../homepage.html">Home</a>
+    <div class="tendina1">
+      <button class="bottone">Topic</button>
+      <div class="elenco">
+        <a href="./colors.html">Colors</a>
+        <a href="./people.html">People</a>
+        <a href="./cars.html">Cars</a>
+      </div>
+    </div>
+    <div class="tendina1">
+      <button class="bottone">I like</button>
+      <div class="elenco">
+        <a href="./like-colors.html">Colors</a>
+        <a href="./like-people.html">People</a>
+        <a href="./like-cars.html">Cars</a>
+      </div>
+    </div>
+    <div class="tendina1">
+      <button class="bottone">I dislike</button>
+      <div class="elenco">
+        <a class="active" href="./dislike-colors.html">Colors</a>
+        <a href="./dislike-people.html">People</a>
+        <a href="./dislike-cars.html">Cars</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!-- this is needed to make sure that the hamburger menu does not disappear when the window is too narrow -->
+    <span class="bottoncino"><input type="checkbox" id="switch" /><label for="switch">Toggle</label></span>
+</div>
+
+<h2>Colors I dislike</h2>
+
+<img src= "../assets/dislike-colors.jpg" alt= "I dislike orange"
+style="width: 90%; height: 30%; margin-left: 5%;">
+<img src= "../assets/dislike-colors2.jpg" alt= "Orange is not my favourite color"
+style="width: 90%; height: 30%; margin-left: 5%;">
+<img src= "../assets/dislike-colors3.jpg" alt= "Orange makes me sad"
+style="width: 90%; height: 30%; margin-left: 5%;">
+
+
+<script src="./functions.js"></script>
+
+</body>
